@@ -44,7 +44,7 @@ const Footer = () => {
     ];
 
     return (
-        <footer className="bg-white dark:bg-[#1A1A1A] border-t border-gray-200 dark:border-gray-800 mt-20">
+        <footer className="bg-white border-t border-gray-200 mt-20">
             {/* Main Footer Content */}
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
                 {/* Top Section - Logo & Company Info */}
@@ -52,21 +52,21 @@ const Footer = () => {
                     {/* Brand Section */}
                     <div className="lg:col-span-1">
                         <Link href="/" className="flex items-center gap-2 mb-4">
-                            <div className="w-12 h-12 bg-[#FFAF19] rounded-lg flex items-center justify-center font-bold text-[#040404]">
+                            <div className="w-12 h-12 bg-[#FFAF19] rounded-lg flex items-center justify-center font-bold text-white">
                                 TB
                             </div>
-                            <span className="text-xl font-bold text-[#040404] dark:text-white">
+                            <span className="text-xl font-bold text-[#1f2937]">
                                 TravBo
                             </span>
                         </Link>
-                        <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
+                        <p className="text-sm text-gray-600 mb-4">
                             Your AI-powered travel planning & booking companion
                         </p>
                         <div className="space-y-2 mb-6">
-                            <p className="text-xs text-gray-500 dark:text-gray-500">
+                            <p className="text-xs text-gray-500">
                                 License: TBD-2024-001
                             </p>
-                            <p className="text-xs text-gray-500 dark:text-gray-500">
+                            <p className="text-xs text-gray-500">
                                 Registered & Certified
                             </p>
                         </div>
@@ -79,7 +79,7 @@ const Footer = () => {
                                         key={social.label}
                                         href={social.href}
                                         aria-label={social.label}
-                                        className="w-10 h-10 bg-gray-100 dark:bg-gray-800 rounded-full flex items-center justify-center text-gray-600 dark:text-gray-400 hover:bg-[#FFAF19] hover:text-white transition-all"
+                                        className="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center text-gray-600 hover:bg-[#FFAF19] hover:text-white transition-all"
                                     >
                                         <Icon size={18} />
                                     </a>
@@ -90,16 +90,16 @@ const Footer = () => {
 
                     {/* Explore Section */}
                     <div>
-                        <h3 className="text-lg font-bold text-[#040404] dark:text-white mb-4 flex items-center gap-2">
+                        <h3 className="text-lg font-bold text-[#1f2937] mb-4 flex items-center gap-2">
                             <span className="w-1 h-6 bg-[#FFAF19] rounded"></span>
                             Explore
                         </h3>
                         <ul className="space-y-2">
                             {footerSections.explore.map((link) => (
-                                <li key={link.href}>
+                                <li key={link.label}>
                                     <Link
                                         href={link.href}
-                                        className="text-gray-600 dark:text-gray-400 hover:text-[#FFAF19] dark:hover:text-[#FFD700] transition-colors text-sm"
+                                        className="text-gray-600 hover:text-[#FFAF19] transition-colors text-sm"
                                     >
                                         {link.label}
                                     </Link>
@@ -110,16 +110,16 @@ const Footer = () => {
 
                     {/* Services Section */}
                     <div>
-                        <h3 className="text-lg font-bold text-[#040404] dark:text-white mb-4 flex items-center gap-2">
+                        <h3 className="text-lg font-bold text-[#1f2937] mb-4 flex items-center gap-2">
                             <span className="w-1 h-6 bg-[#FFAF19] rounded"></span>
                             Services
                         </h3>
                         <ul className="space-y-2">
                             {footerSections.services.map((link) => (
-                                <li key={link.href}>
+                                <li key={link.label}>
                                     <Link
                                         href={link.href}
-                                        className="text-gray-600 dark:text-gray-400 hover:text-[#FFAF19] dark:hover:text-[#FFD700] transition-colors text-sm"
+                                        className="text-gray-600 hover:text-[#FFAF19] transition-colors text-sm"
                                     >
                                         {link.label}
                                     </Link>
@@ -130,16 +130,16 @@ const Footer = () => {
 
                     {/* Useful Links Section */}
                     <div>
-                        <h3 className="text-lg font-bold text-[#040404] dark:text-white mb-4 flex items-center gap-2">
+                        <h3 className="text-lg font-bold text-[#1f2937] mb-4 flex items-center gap-2">
                             <span className="w-1 h-6 bg-[#FFAF19] rounded"></span>
                             Useful Links
                         </h3>
                         <ul className="space-y-2">
                             {footerSections.usefulLinks.map((link) => (
-                                <li key={link.href}>
+                                <li key={link.label}>
                                     <Link
                                         href={link.href}
-                                        className="text-gray-600 dark:text-gray-400 hover:text-[#FFAF19] dark:hover:text-[#FFD700] transition-colors text-sm"
+                                        className="text-gray-600 hover:text-[#FFAF19] transition-colors text-sm"
                                     >
                                         {link.label}
                                     </Link>
@@ -150,16 +150,16 @@ const Footer = () => {
 
                     {/* Promotions Section */}
                     <div>
-                        <h3 className="text-lg font-bold text-[#040404] dark:text-white mb-4 flex items-center gap-2">
+                        <h3 className="text-lg font-bold text-[#1f2937] mb-4 flex items-center gap-2">
                             <span className="w-1 h-6 bg-[#FFAF19] rounded"></span>
                             Promotions
                         </h3>
                         <ul className="space-y-2">
                             {footerSections.promotions.map((link) => (
-                                <li key={link.href}>
+                                <li key={link.label}>
                                     <Link
                                         href={link.href}
-                                        className="text-gray-600 dark:text-gray-400 hover:text-[#FFAF19] dark:hover:text-[#FFD700] transition-colors text-sm"
+                                        className="text-gray-600 hover:text-[#FFAF19] transition-colors text-sm"
                                     >
                                         {link.label}
                                     </Link>
@@ -170,20 +170,20 @@ const Footer = () => {
                 </div>
 
                 {/* Divider */}
-                <hr className="border-gray-200 dark:border-gray-800 my-8" />
+                <hr className="border-gray-200 my-8" />
 
                 {/* Contact & Office Sections */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
                     {/* Contact Section */}
                     <div>
-                        <h4 className="text-lg font-bold text-[#040404] dark:text-white mb-4">
+                        <h4 className="text-lg font-bold text-[#1f2937] mb-4">
                             Contact Us
                         </h4>
                         <div className="space-y-3">
                             <div className="flex items-start gap-3">
-                                <Mail size={18} className="text-[#FFAF19] mt-1 flex-shrink-0" />
+                                <Mail size={18} className="text-[#FFAF19] mt-1 shrink-0" />
                                 <div>
-                                    <p className="text-sm text-gray-600 dark:text-gray-400">Email</p>
+                                    <p className="text-sm text-gray-600">Email</p>
                                     <a
                                         href="mailto:contact@travbo.com"
                                         className="text-[#FFAF19] hover:text-[#FF9500] font-semibold transition-colors"
@@ -193,9 +193,9 @@ const Footer = () => {
                                 </div>
                             </div>
                             <div className="flex items-start gap-3">
-                                <Phone size={18} className="text-[#FFAF19] mt-1 flex-shrink-0" />
+                                <Phone size={18} className="text-[#FFAF19] mt-1 shrink-0" />
                                 <div>
-                                    <p className="text-sm text-gray-600 dark:text-gray-400">Hotline</p>
+                                    <p className="text-sm text-gray-600">Hotline</p>
                                     <a
                                         href="tel:+1234567890"
                                         className="text-[#FFAF19] hover:text-[#FF9500] font-semibold transition-colors"
@@ -205,9 +205,9 @@ const Footer = () => {
                                 </div>
                             </div>
                             <div className="flex items-start gap-3">
-                                <MessageCircle size={18} className="text-[#FFAF19] mt-1 flex-shrink-0" />
+                                <MessageCircle size={18} className="text-[#FFAF19] mt-1 shrink-0" />
                                 <div>
-                                    <p className="text-sm text-gray-600 dark:text-gray-400">WhatsApp</p>
+                                    <p className="text-sm text-gray-600">WhatsApp</p>
                                     <a
                                         href="https://wa.me/1234567890"
                                         className="text-[#FFAF19] hover:text-[#FF9500] font-semibold transition-colors"
@@ -221,13 +221,13 @@ const Footer = () => {
 
                     {/* Main Office */}
                     <div>
-                        <h4 className="text-lg font-bold text-[#040404] dark:text-white mb-4">
+                        <h4 className="text-lg font-bold text-[#1f2937] mb-4">
                             Main Office
                         </h4>
                         <div className="flex items-start gap-3 mb-4">
-                            <MapPin size={18} className="text-[#FFAF19] mt-1 flex-shrink-0" />
-                            <div className="text-sm text-gray-600 dark:text-gray-400 space-y-1">
-                                <p className="font-semibold text-[#040404] dark:text-white">TravBo Headquarters</p>
+                            <MapPin size={18} className="text-[#FFAF19] mt-1 shrink-0" />
+                            <div className="text-sm text-gray-600 space-y-1">
+                                <p className="font-semibold text-[#1f2937]">TravBo Headquarters</p>
                                 <p>123 Travel Street,</p>
                                 <p>Suite 100, City, Country</p>
                                 <p>Postal Code 12345</p>
@@ -241,13 +241,13 @@ const Footer = () => {
 
                     {/* Support Office */}
                     <div>
-                        <h4 className="text-lg font-bold text-[#040404] dark:text-white mb-4">
+                        <h4 className="text-lg font-bold text-[#1f2937] mb-4">
                             Support Center
                         </h4>
                         <div className="flex items-start gap-3 mb-4">
-                            <MapPin size={18} className="text-[#FFAF19] mt-1 flex-shrink-0" />
-                            <div className="text-sm text-gray-600 dark:text-gray-400 space-y-1">
-                                <p className="font-semibold text-[#040404] dark:text-white">TravBo Support</p>
+                            <MapPin size={18} className="text-[#FFAF19] mt-1 shrink-0" />
+                            <div className="text-sm text-gray-600 space-y-1">
+                                <p className="font-semibold text-[#1f2937]">TravBo Support</p>
                                 <p>456 Support Ave,</p>
                                 <p>Suite 200, City, Country</p>
                                 <p>Postal Code 54321</p>
@@ -261,38 +261,38 @@ const Footer = () => {
                 </div>
 
                 {/* Divider */}
-                <hr className="border-gray-200 dark:border-gray-800 my-8" />
+                <hr className="border-gray-200 my-8" />
 
                 {/* Certifications & Payment Section */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
                     {/* Certifications */}
                     <div>
-                        <h4 className="text-sm font-bold text-[#040404] dark:text-white mb-4 uppercase tracking-wide">
+                        <h4 className="text-sm font-bold text-[#1f2937] mb-4 uppercase tracking-wide">
                             Certifications & Accreditations
                         </h4>
                         <div className="flex flex-wrap gap-4">
-                            <div className="w-16 h-16 bg-gray-100 dark:bg-gray-800 rounded flex items-center justify-center">
-                                <span className="text-xs text-gray-600 dark:text-gray-400 text-center px-2">ISO 9001</span>
+                            <div className="w-16 h-16 bg-gray-100 rounded flex items-center justify-center">
+                                <span className="text-xs text-gray-600 text-center px-2">ISO 9001</span>
                             </div>
-                            <div className="w-16 h-16 bg-gray-100 dark:bg-gray-800 rounded flex items-center justify-center">
-                                <span className="text-xs text-gray-600 dark:text-gray-400 text-center px-2">Verified</span>
+                            <div className="w-16 h-16 bg-gray-100 rounded flex items-center justify-center">
+                                <span className="text-xs text-gray-600 text-center px-2">Verified</span>
                             </div>
-                            <div className="w-16 h-16 bg-gray-100 dark:bg-gray-800 rounded flex items-center justify-center">
-                                <span className="text-xs text-gray-600 dark:text-gray-400 text-center px-2">Partner</span>
+                            <div className="w-16 h-16 bg-gray-100 rounded flex items-center justify-center">
+                                <span className="text-xs text-gray-600 text-center px-2">Partner</span>
                             </div>
                         </div>
                     </div>
 
                     {/* Payment Methods */}
                     <div>
-                        <h4 className="text-sm font-bold text-[#040404] dark:text-white mb-4 uppercase tracking-wide">
+                        <h4 className="text-sm font-bold text-[#1f2937] mb-4 uppercase tracking-wide">
                             We Accept
                         </h4>
                         <div className="flex flex-wrap gap-3">
                             {['Visa', 'Mastercard', 'PayPal', 'Google Pay', 'Apple Pay'].map((method) => (
                                 <div
                                     key={method}
-                                    className="px-3 py-2 bg-gray-100 dark:bg-gray-800 rounded text-xs font-semibold text-gray-600 dark:text-gray-400"
+                                    className="px-3 py-2 bg-gray-100 rounded text-xs font-semibold text-gray-600"
                                 >
                                     {method}
                                 </div>
@@ -302,11 +302,11 @@ const Footer = () => {
                 </div>
 
                 {/* Divider */}
-                <hr className="border-gray-200 dark:border-gray-800 my-8" />
+                <hr className="border-gray-200 my-8" />
 
                 {/* Bottom Links & Copyright */}
                 <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
-                    <div className="flex flex-wrap justify-center sm:justify-start gap-6 text-sm text-gray-600 dark:text-gray-400">
+                    <div className="flex flex-wrap justify-center sm:justify-start gap-6 text-sm text-gray-600">
                         <Link href="#" className="hover:text-[#FFAF19] transition-colors">
                             Support Center
                         </Link>
@@ -321,7 +321,7 @@ const Footer = () => {
                         </Link>
                     </div>
                     <div className="text-center sm:text-right">
-                        <p className="text-sm text-gray-600 dark:text-gray-400">
+                        <p className="text-sm text-gray-600">
                             Copyright © {currentYear}{' '}
                             <Link href="/" className="text-[#FFAF19] hover:text-[#FF9500] font-semibold transition-colors">
                                 TravBo
