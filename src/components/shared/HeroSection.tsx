@@ -2,7 +2,6 @@
 
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { Sparkles, ArrowRight } from "lucide-react";
 
 const HeroSection = () => {
@@ -10,13 +9,16 @@ const HeroSection = () => {
     <section className="relative overflow-hidden bg-[#F3F3F3]">
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-linear-to-r from-black/75 via-black/55 to-black/25 z-10" />
-        <Image
-          src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1800&q=80"
-          alt="Travel background"
-          fill
-          priority
-          className="object-cover"
-        />
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source src="/253436.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
       </div>
 
       <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
