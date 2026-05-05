@@ -1,28 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+
 @import "tailwindcss";
 
 /* TravBo Brand Colors */
 :root {
   /* Light Mode */
-  --background: #F3F3F3;
-  --foreground: #040404;
+  --background: #ffffff;
+  --foreground: #1f2937;
   --primary: #FFAF19;
-  --dark: #040404;
+  --dark: #1f2937;
   --light: #F3F3F3;
   --primary-hover: #FF9500;
   --text-secondary: #666666;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    /* Dark Mode */
-    --background: #040404;
-    --foreground: #F3F3F3;
-    --primary: #FFAF19;
-    --dark: #040404;
-    --light: #F3F3F3;
-    --primary-hover: #FFD700;
-    --text-secondary: #AAAAAA;
-  }
 }
 
 @theme inline {
@@ -31,15 +20,64 @@
   --color-primary: var(--primary);
   --color-dark: var(--dark);
   --color-light: var(--light);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: 'Poppins', 'Segoe UI', sans-serif;
+  --font-serif: 'Playfair Display', serif;
+  --font-mono: 'Inter', monospace;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Heading Styles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+h2 {
+  font-size: clamp(1.75rem, 4vw, 3rem);
+  font-weight: 700;
+  letter-spacing: -0.75px;
+}
+
+h3 {
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  font-weight: 700;
+}
+
+/* Body text */
+p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0.3px;
+}
+
+/* Links */
+a {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+/* Button styles */
+button, .button {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
 }
 
 /* Scrollbar styling */
@@ -58,4 +96,33 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--primary-hover);
+}
+
+/* Carousel Animations */
+@keyframes slideRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(50%);
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@layer utilities {
+  .animate-right {
+    animation: slideRight 30s linear infinite;
+  }
+  
+  .animate-left {
+    animation: slideLeft 30s linear infinite;
+  }
 }
