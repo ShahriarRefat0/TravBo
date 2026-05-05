@@ -24,8 +24,8 @@ export default function BestHotels() {
     <section className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4">
         {/* Header */}
-        <h2 className="text-4xl font-bold text-[#1f2937]">Best Hotels for Your Next Trip</h2>
-        <p className="text-[#666666] mt-2 text-lg">
+        <h2 className="text-3xl sm:text-4xl font-bold text-[#1f2937]">Best Hotels for Your Next Trip</h2>
+        <p className="text-[#666666] mt-2 text-base sm:text-lg">
           Luxurious destinations, villas or resorts, browse accommodations at ShareTrip that meet the need. Book Long-term or short-term accommodation from our hotel deals
         </p>
 

@@ -25,7 +25,7 @@ const ExclusiveOffers: React.FC = () => {
   return (
     <section className="py-12 bg-transparent">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-2xl font-bold mb-6">Exclusive Offers</h2>
+        <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-[#1f2937]">Exclusive Offers</h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {offers.map((o) => (

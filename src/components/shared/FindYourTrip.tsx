@@ -34,8 +34,8 @@ const FindYourTrip = () => {
 
   return (
     <section className="relative z-30 -mt-16 pb-12 sm:-mt-20 sm:pb-16">
-      <div className="max-w-280 mx-auto px-3 sm:px-4 lg:px-5">
-        <div className="bg-white rounded-lg shadow-md overflow-hidden">
+      <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-5">
+        <div className="bg-white rounded-lg shadow-lg overflow-hidden">
           <div className="px-4 py-6 sm:px-6 sm:py-8 lg:px-8">
             <div className="space-y-4">
               <div className="grid gap-3 grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 lg:items-end">

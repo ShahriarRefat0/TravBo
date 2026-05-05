@@ -90,7 +90,7 @@ const Footer = () => {
 
                     {/* Explore Section */}
                     <div>
-                        <h3 className="text-lg font-bold text-[#1f2937] mb-4 flex items-center gap-2">
+                        <h3 className="text-base font-bold text-[#1f2937] mb-4 flex items-center gap-2">
                             <span className="w-1 h-6 bg-[#FFAF19] rounded"></span>
                             Explore
                         </h3>
@@ -110,7 +110,7 @@ const Footer = () => {
 
                     {/* Services Section */}
                     <div>
-                        <h3 className="text-lg font-bold text-[#1f2937] mb-4 flex items-center gap-2">
+                        <h3 className="text-base font-bold text-[#1f2937] mb-4 flex items-center gap-2">
                             <span className="w-1 h-6 bg-[#FFAF19] rounded"></span>
                             Services
                         </h3>
@@ -130,7 +130,7 @@ const Footer = () => {
 
                     {/* Useful Links Section */}
                     <div>
-                        <h3 className="text-lg font-bold text-[#1f2937] mb-4 flex items-center gap-2">
+                        <h3 className="text-base font-bold text-[#1f2937] mb-4 flex items-center gap-2">
                             <span className="w-1 h-6 bg-[#FFAF19] rounded"></span>
                             Useful Links
                         </h3>
@@ -150,7 +150,7 @@ const Footer = () => {
 
                     {/* Promotions Section */}
                     <div>
-                        <h3 className="text-lg font-bold text-[#1f2937] mb-4 flex items-center gap-2">
+                        <h3 className="text-base font-bold text-[#1f2937] mb-4 flex items-center gap-2">
                             <span className="w-1 h-6 bg-[#FFAF19] rounded"></span>
                             Promotions
                         </h3>
@@ -221,7 +221,7 @@ const Footer = () => {
 
                     {/* Main Office */}
                     <div>
-                        <h4 className="text-lg font-bold text-[#1f2937] mb-4">
+                        <h4 className="text-base font-bold text-[#1f2937] mb-4">
                             Main Office
                         </h4>
                         <div className="flex items-start gap-3 mb-4">
@@ -241,7 +241,7 @@ const Footer = () => {
 
                     {/* Support Office */}
                     <div>
-                        <h4 className="text-lg font-bold text-[#1f2937] mb-4">
+                        <h4 className="text-base font-bold text-[#1f2937] mb-4">
                             Support Center
                         </h4>
                         <div className="flex items-start gap-3 mb-4">

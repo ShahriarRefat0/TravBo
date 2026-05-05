@@ -86,7 +86,7 @@ function Card({ place, big = false }: any) {
       <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
 
       <div className="absolute top-4 left-4 text-white">
-        <h3 className="text-xl font-semibold">
+        <h3 className="text-lg sm:text-xl font-semibold">
           {place.name} {place.flag}
         </h3>
       </div>
